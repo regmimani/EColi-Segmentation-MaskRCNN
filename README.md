@@ -18,7 +18,7 @@ This project introduces a **4-Phase Pipeline**:
 3. **Geometric Feature Extraction:** Morphological analysis (Area, Perimeter, Aspect Ratio, Circularity, Eccentricity, Solidity).
 4. **Boundary-Aware Evaluation:** Custom implementation of Boundary IoU and spatial crowding/density analysis.
 
-![Architecture Diagram](images/architecture_diagram.png) *(Note: Upload your architecture diagram here)*
+![Architecture Diagram](images/architecture_diagram.jpg)
 
 ---
 
@@ -38,7 +38,7 @@ Despite boundary contraction causing a **29.4% underestimation in cell area**, t
 * **Eccentricity Error:** Only **0.51%** (Successfully preserves rod-shaped morphology).
 * **Solidity Error:** Only **2.88%** (Successfully preserves cell convexity).
 
-![Visual Results](images/phase1_to_phase4_visualization.png) *(Note: Upload your 6-panel visualization here)*
+![Visual Results](images/phase1_to_phase4_visualization.png)
 
 ---
 
