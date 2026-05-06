@@ -21,7 +21,7 @@ This project introduces a **4-Phase Pipeline** designed to rigorously evaluate t
 
 ### 🏗️ Pipeline Architecture
 
-![Architecture Diagram](images/architecture%20diagram.jpg) 
+![Architecture Diagram](images/architecture_diagram.jpg) 
 
 ---
 
