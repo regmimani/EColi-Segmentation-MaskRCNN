@@ -47,12 +47,26 @@ Despite boundary contraction causing a **29.4% underestimation in overall cell a
 
 ---
 
-## 🗂️ Repository Structure
+## 🚀 Getting Started (Colab Environment)
 
-```text
-.
-├── images/
-│   ├── architecture diagram.jpg          # Pipeline flowchart
-│   └── phase1_to_phase4_visualization.png # 6-panel visual results
-├── DeepBacs_E_Coli_Updated.ipynb         # Main Google Colab Notebook (Codebase)
-└── README.md                             # Project documentation
+This pipeline is optimized for execution in **Google Colab** using an NVIDIA T4 GPU.
+
+**1. Dataset Preparation:**
+* Download the E. coli Brightfield dataset from [Zenodo (ID: 5550935)](https://zenodo.org/records/5550935).
+* Upload the dataset to your Google Drive. The notebook automatically handles the conversion of `RoiMap` masks into COCO-compatible Detectron2 dictionaries.
+
+**2. Running the Pipeline:**
+* Open `DeepBacs_E_Coli_segmentation.ipynb` in Google Colab.
+* Mount your Google Drive in the first cell.
+* **Phase 1 & 2:** Run the training cells. The model utilizes transfer learning from a COCO-pretrained `mask_rcnn_R_101_FPN_3x` backbone.
+* **Phase 3 & 4:** Run the evaluation cells to extract standard COCO metrics, Boundary IoU, and population-level shape statistics.
+
+**3. Outputs:**
+The notebook will automatically package all CSV metric reports, geometry histograms, and the `model_final.pth` weights into a downloadable ZIP archive in your Drive.
+
+---
+
+## 📖 Acknowledgements
+
+* **Dataset Acknowledgement:** Spahn et al. (2022). *DeepBacs for multi-task bacterial cell segmentation using open-source deep learning approaches*. Communications Biology.
+* **Frameworks:** Built using [Detectron2](https://github.com/facebookresearch/detectron2) and [PyTorch](https://pytorch.org/).
