@@ -62,7 +62,7 @@ This pipeline is optimized for execution in **Google Colab** using an NVIDIA T4 
 * **Phase 3 & 4:** Run the evaluation cells to extract standard COCO metrics, Boundary IoU, and population-level shape statistics.
 
 **3. Outputs:**
-The notebook will automatically package all CSV metric reports, geometry histograms, and the `model_final.pth` weights into a downloadable ZIP archive in your Drive.
+The notebook will automatically package all CSV metric reports, geometry histograms, and the `model_final.pth` weights in your Drive.
 
 ---
 
